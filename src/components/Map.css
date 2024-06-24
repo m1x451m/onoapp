@@ -1,0 +1,23 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
+.ability-icon {
+  position: absolute;
+  width: 21px; /* 元の70% */
+  height: 21px; /* 元の70% */
+  cursor: pointer;
+}
