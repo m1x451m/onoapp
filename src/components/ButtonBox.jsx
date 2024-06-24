@@ -66,7 +66,12 @@ const ButtonBox = () => {
             key={agent.name}
             onClick={() => handleAgentClick(agent)}
           >
-            <img src={`images/${agent.img}`} alt={agent.name} data-name={agent.name} onError={handleImageError} />
+            <img
+              src={`images/agent/${agent.name.toLowerCase()}/${agent.img}`}
+              alt={agent.name}
+              data-name={agent.name}
+              onError={handleImageError}
+            />
           </div>
         ))}
       </div>
@@ -84,7 +89,12 @@ const AbilityButtons = () => {
     <>
       {[1, 2, 3, 4].map(num => (
         <button key={num} className="ability-button">
-          {selectedAgent && <img src={`images/${selectedAgent.toLowerCase()}_ablty${num}.png`} alt={`Ability ${num}`} />}
+          {selectedAgent && (
+            <img
+              src={`images/agent/${selectedAgent.toLowerCase()}/${selectedAgent.toLowerCase()}_ablty${num}.png`}
+              alt={`Ability ${num}`}
+            />
+          )}
         </button>
       ))}
     </>
