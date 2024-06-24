@@ -1,8 +1,14 @@
 .app {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   background-color: #1e1e1e;
   color: white;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
 }
 
 .sidebar {
