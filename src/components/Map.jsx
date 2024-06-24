@@ -42,11 +42,11 @@ const Map = () => {
     <div className="map-container">
       <TransformWrapper wheel={{ step: 0.2 }}>
         <TransformComponent>
-          <img src={`images/${selectedMap.toLowerCase()}.png`} alt={`${selectedMap} Map`} className="map" />
+          <img src={`images/map/${selectedMap.toLowerCase()}.png`} alt={`${selectedMap} Map`} className="map" />
           {positions.map((position) => (
             <img
               key={position.id}
-              src={`images/${position.ablty}`}
+              src={`images/agent/${selectedAgent.toLowerCase()}/${position.ablty}`}
               alt={`Ability ${position.id}`}
               className="ability-icon"
               style={{ top: position.top, left: position.left }}
