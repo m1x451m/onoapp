@@ -6,3 +6,18 @@
     overflow: hidden;
   }
   
+  .map-container {
+    position: relative;
+  }
+  
+  .ability-icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .ability-icon {
+    pointer-events: auto !important;
+  }
+  
